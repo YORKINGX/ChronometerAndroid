@@ -25,6 +25,7 @@ import com.karumi.dexter.MultiplePermissionsReport;
 import com.karumi.dexter.PermissionToken;
 import com.karumi.dexter.listener.PermissionRequest;
 import com.karumi.dexter.listener.multi.MultiplePermissionsListener;
+import com.administrador.chronometerandroid.model.ElemntListLaps;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -195,14 +196,15 @@ public class BaseActivity extends AppCompatActivity {
 
     public ArrayList reverseListArray(ArrayList arrayList){
 
-         ArrayList arrayList1 = arrayList;
+        ArrayList arrayList1 = new ArrayList<ElemntListLaps>();
 
         int index = 0;
         for (int i = arrayList.size()-1; i > -1; i -= 1) {
-            arrayList1.add(arrayList.get(i));
+            arrayList1.add(index,arrayList.get(i));
+            index = index + 1;
         }
 
-       return arrayList;
+       return arrayList1;
     }
 
 

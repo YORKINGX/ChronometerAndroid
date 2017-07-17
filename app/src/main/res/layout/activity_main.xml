@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="@drawable/gradient_blue"
+    android:background="@drawable/gradient_blue"
     tools:context="com.administrador.chronometerandroid.activities.MainActivity">
 
 
@@ -36,7 +36,7 @@
         <ListView
             android:id="@+id/elemntinview"
             android:layout_width="wrap_content"
-            android:layout_height="391dp">
+            android:layout_height="match_parent">
 
         </ListView>
 
